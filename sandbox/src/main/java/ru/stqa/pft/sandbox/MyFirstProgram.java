@@ -8,17 +8,14 @@ class MyFirstProgram {
     System.out.println("Hello, java" + l);
     hello("world");
     hello("no   understand");
-    double len=55, q=66, d=44;
-    System.out.println("Площадь квадрата = " + areas(len));
-    System.out.println("Обьем паралелепипеда = " + areas(len, q, d));
+
+    Rectangle r = new Rectangle(4, 5, 6);
+
+    Square s = new Square(5);
+    System.out.println("Площадь квадрата " + s.i + " * " + s.i + " = " + s.areas());
+    System.out.println("Обьем паралелепипеда = " + r.a + " * " + r.b + " * " + r.c + " = " + r.areas());
   }
   public static void hello(String some) {
     System.out.println("Hello, "+some);
-  }
-  public static double areas(double a) {
-    return a*a;
-  }
-  public static double areas(double a, double b, double c){
-    return a*b*c;
   }
 }
